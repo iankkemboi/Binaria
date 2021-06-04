@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/sendMoneyFragment">
+
+    <fragment
+        android:id="@+id/sendMoneyFragment"
+        android:name="com.ian.sendwave.binaria.ui.SendMoneyFragment"
+        android:label="SendMoneyFragment" >
+        <action
+            android:id="@+id/action_sendMoneyFragment_to_transactionProcessingFragment"
+
+            app:destination="@id/transactionProcessingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionProcessingFragment"
+        android:name="com.ian.sendwave.binaria.ui.TransactionProcessingFragment"
+        android:label="TransactionProcessingFragment" >
+        <action
+            android:id="@+id/action_transactionProcessingFragment_to_sendMoneyFragment"
+            app:popUpTo="@+id/sendMoneyFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/sendMoneyFragment" />
+    </fragment>
+</navigation>

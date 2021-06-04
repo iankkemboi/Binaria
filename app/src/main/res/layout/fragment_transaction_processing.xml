@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.food.ordering.zinger.ui.login.LoginActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/layout_state"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:lottie_rawRes="@raw/success"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:id="@+id/text_place_order_status"
+
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:text="@string/transaction_has_been_successfully_sent_for_processing"
+                android:textAppearance="@style/AppbarTitle"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_gohome"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="@string/go_home"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/colorAccent" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</layout>
