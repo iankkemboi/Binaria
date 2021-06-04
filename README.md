@@ -1,6 +1,7 @@
 # Binaria
 
-
+## Programming Language
+The project was written primarily in Kotlin
 ## App Architecture 
 The architecture approach chosen was [Android Architecture Components](https://developer.android.com/jetpack/guide?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgNXH3aKpLvuKhDYfQSfx9Pr9y9NR2ckaCN5EWqOC7UUpvVSRHXX0p0aAltyEALw_wcB&gclsrc=aw.ds) relying on the MVVM(Model - View -View Model) and [LiveData](https://developer.android.com/topic/libraries/architecture/livedata). Reasons for selecting this approach include
 
@@ -9,6 +10,7 @@ The architecture approach chosen was [Android Architecture Components](https://d
 
 - Easier support for event driven programming
  LiveData and Data Binding allows for UI components to react to events and respond accordingly.
+
 
 
 ## Dependency Injection
